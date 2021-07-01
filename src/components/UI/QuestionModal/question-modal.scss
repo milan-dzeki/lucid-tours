@@ -1,0 +1,84 @@
+@import '../../../sass-additions/mixins.scss';
+
+.question-modal {
+  @include modalStyles;
+    // position: fixed;
+    // z-index: 6;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%) scale(0.5);
+    // background-color: white;
+    // width: 40rem;
+    // border-radius: 0.5rem;
+    // overflow: hidden;
+    // opacity: 0;
+    // transition: all 0.3s ease-out;
+
+  &__title {
+    background-color: red;
+    text-align: center;
+    padding: 1.5rem 0;
+    color: white;
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 2rem 0 3rem 0;
+  }
+
+  &__btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &--cancel {
+      margin-right: 1rem;
+      background-color: orange;
+    }
+
+    &--confirm {
+      background-color: salmon;
+    }
+  }
+}
+// .show-enter {
+//   opacity: 0;
+//   transform: translate(-50%, -50%) scale(0.5);
+// }
+.show-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.show-enter-done {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.show-exit-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.show-exit-done {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}

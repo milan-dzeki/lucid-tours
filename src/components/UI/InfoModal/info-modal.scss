@@ -1,0 +1,77 @@
+@import '../../../sass-additions/mixins.scss';
+
+.info-modal {
+  @include modalStyles;
+  width: 90%;
+
+  @media (min-width: 800px) {
+    width: 50rem;
+  }
+
+  &__title {
+    font-size: 3rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__alert {
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem 0;
+  }
+
+  &__text {
+    font-size: 1.9rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 2rem 3rem;
+    font-weight: 600;
+  }
+
+  &__btns {
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    width: 100%;
+    margin: 0 auto 0 auto;
+    border: none;
+    padding: 1rem 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+
+    &--cancel, &--confirm {
+      background-color: transparent;
+      border: none;
+      font-size: 1.8rem;
+      padding: 1rem 2rem;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &--cancel {
+      color: red;
+    }
+    &--confirm {
+      color: rgb(79, 182, 216);
+    }
+
+    &:hover {
+      background-color: rgb(255, 218, 218);
+    }
+  }
+}

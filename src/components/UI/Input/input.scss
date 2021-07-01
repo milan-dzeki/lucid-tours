@@ -1,0 +1,64 @@
+.generic-input {
+  width: 100%;
+  margin: 0 auto 1rem auto;
+  position: relative;
+
+  label {
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 0.7rem;
+  }
+
+  &__field {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 1px solid #ccc;
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &__message {
+    position: absolute;
+    top: -3.2rem;
+    left: -2rem;
+    background-color: rgb(14, 14, 14);
+    width: 30rem;
+    height: 4rem;
+    padding: 0.5rem 1rem;
+    clip-path: polygon(0 0, 100% 0, 100% 3rem, 4rem 3rem, 3rem 4rem, 3rem 3rem, 0 3rem);
+    display: none;
+
+    &-icon {
+      font-size: 1.8rem;
+      color: red;
+      margin-right: 1rem;
+    }
+
+    &-text {
+      color: white;
+      padding-top: 0.1rem;
+      font-size: 1.3rem;
+    }
+  }
+}
+
+.field-disabled {
+  opacity: 0.4;
+}
+.field-valid {
+  border: 1px solid lightblue;
+  background-color: rgb(230, 249, 255);
+}
+.field-invalid {
+  border: 1px solid rgb(255, 36, 36);
+  background-color: rgb(255, 228, 228);
+}
+.warning-shown {
+  display: flex;
+}

@@ -1,0 +1,307 @@
+@import "../../sass-additions/variables";
+// section title
+.section-title__about {
+  background-color: $about-section-blue-1;
+  color: white;
+}
+
+//banner
+.banner__about {
+  
+  .banner__content {
+    grid-template-columns: repeat(5, 100vw);
+  }
+  .banner__item--0 {
+    .banner__item-title {
+      top: 4rem;
+
+      @media (min-width: 650px) {
+        top: 8rem;
+      }
+
+      @media (min-width: 850px) {
+        top: 10rem;
+      }
+
+      &__title {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 850px) {
+          font-size: 7rem;
+        }
+
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 650px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .banner__item--1 {
+    .banner__item-title {
+      top: 8rem;
+
+      &__title {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 650px) {
+          font-size: 8rem;
+        }
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 650px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .banner__item--2 {
+    .banner__item-title {
+      top: 8rem;
+
+      &__title {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 650px) {
+          font-size: 8rem;
+        }
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 650px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .banner__item--3 {
+    .banner__item-title {
+      top: 8rem;
+
+      &__title {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 650px) {
+          font-size: 8rem;
+        }
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 650px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .banner__item--4 {
+    .banner__item-title {
+      top: 8rem;
+
+      @media (min-width: 650px) {
+        top: 4rem;
+      }
+
+      @media (min-width: 850px) {
+        top: 10rem;
+      }
+
+      &__title {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 650px) {
+          font-size: 7rem;
+        }
+
+        @media (min-width: 850px) {
+          font-size: 8rem;
+        }
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 650px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+}
+
+.about-transport {
+  &__company {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #eee;
+  }
+  &__title {
+    font-size: 1.8rem;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 0;
+    text-transform: uppercase;
+  }
+  &__img {
+    width: 30rem;
+    height: 20rem;
+    margin: 0 auto;
+    // flex: 1;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  &__link {
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    // flex: 0 0 10rem;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.slider__about-transport {
+  .slider__content {
+    height: 40rem;
+  }
+  .slider__button--left {
+    left: -4rem;
+  }
+  .slider__button--right {
+    right: -4rem;
+  }
+  .about-transport__company {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    // width: 40rem;
+    max-width: 60rem;
+    height: 100%;
+    transition: all 0.2s linear;
+    border: 4px solid black;
+  }
+}
+
+// hotels subsection
+.about-hotel {
+  overflow-y: scroll;
+
+  &__title {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(3, 100, 179);
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    padding: 1rem 0;
+  }
+
+  &__img {
+    height: 20rem;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &__address, &__stars, &__text {
+    font-size: 1.6rem;
+    padding: 1rem;
+  }
+
+  &__address {
+    background-color: lightblue;
+    font-size: 1.6rem;
+  }
+
+  &__stars {
+    background-color: rgb(0, 162, 255);
+  }
+
+  &__text {
+    background-color: rgb(236, 246, 255);
+  }
+
+  &__prefix {
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+}
+
+.slider__about-hotels {
+  .slider__content {
+    height: 50rem;
+  }
+  .slider__button--left {
+    left: -4rem;
+  }
+  .slider__button--right {
+    right: -4rem;
+  }
+
+  .about-hotel {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    // width: 40rem;
+    max-width: 60rem;
+    height: 100%;
+    transition: all 0.2s linear;
+    border: 4px solid black;
+  }
+}

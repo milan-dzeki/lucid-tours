@@ -1,0 +1,44 @@
+.slider {
+  position: relative;
+  z-index: 6;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    // height: 50rem;
+    position: relative;
+    
+    // transform: translateX(-100%);
+
+    // & > * {
+    //   width: 100vw;
+    // }
+  }
+
+  &__button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 4rem;
+    color: rgb(104, 182, 255);
+    opacity: 0.5;
+    z-index: 6;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    // &--left {
+    //   left: -4rem;
+    // }
+    // &--right {
+    //   right: -4rem;
+    // }
+  }
+}

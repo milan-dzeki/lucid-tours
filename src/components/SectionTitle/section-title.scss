@@ -1,0 +1,41 @@
+.section-title {
+  padding: 0.7rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    font-size: 4rem;
+    padding-top: 1rem;
+    margin-right: 2rem;
+  }
+
+  &__text {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+
+  &__additional {
+    padding-top: 0.7rem;
+    font-size: 2rem;
+    width: 0;
+    height: 0;
+    font-style: italic;
+    opacity: 0;
+    transform: translateX(-50%);
+    transition: all 0.15s ease-out;
+
+    @media (min-width: 650px) {
+      height: auto;
+      width: auto;
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}

@@ -1,0 +1,49 @@
+.loader {
+  height: 50rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Indie Flower', cursive;
+  text-transform: uppercase;
+
+  &__content {
+    border: 0.4rem solid rgb(26, 110, 167);
+    border-radius: 50%;
+    padding: 15rem 4rem;
+    position: relative;
+    background-color: rgb(77, 153, 179);
+    animation: loaderAnimation 2s ease-out infinite;
+  }
+
+  &__text {
+    font-size: 6rem;
+    font-weight: bold;
+    color: lightblue;
+    position: relative;
+    z-index: 4;
+  }
+
+  &__bcg {
+    position: absolute;
+    top: 7rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(0, 0, 0);
+    height: 70%;
+    width: 40rem;
+    clip-path: polygon(30% 0, 48% 84%, 61% 0, 100% 0, 46% 95%, 46% 96%, 2% 35%);
+  }
+}
+
+@keyframes loaderAnimation {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}

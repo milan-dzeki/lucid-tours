@@ -1,0 +1,39 @@
+.footer {
+  background-color: black;
+  width: 100%;
+  padding: 2rem;
+
+  &__top {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border-bottom: 1px solid blue;
+
+    &-title {
+      color: white;
+      text-transform: uppercase;
+      font-family: 'Indie Flower', cursive;
+      font-size: 3rem;
+      position: relative;
+      z-index: 3;
+    }
+
+    &-logo {
+      
+      position: absolute;
+      top: 0.5rem;
+      background-color: rgb(41, 180, 214);
+      height: 7rem;
+      width: 8rem;
+      clip-path: polygon(30% 0, 48% 84%, 61% 0, 100% 0, 46% 95%, 46% 96%, 2% 35%);
+    }
+  }
+
+  &__bottom {
+    color: white;
+    text-align: center;
+    padding: 2rem;
+    font-size: 2.4rem;
+  }
+}

@@ -1,0 +1,62 @@
+.your-review {
+  border: 1px solid rgb(194, 194, 250);
+  border-radius: 0.5rem;
+  overflow: hidden;
+
+  &__agency {
+    width: 90%;
+    max-width: 50rem;
+    margin: 0 auto;
+  }
+
+  &__tours {
+    width: 90%;
+    margin: 1rem auto;
+    max-width: 40rem;
+  }
+
+  &__title {
+    text-align: center;
+    text-transform: capitalize;
+    background-color: lavender;
+    font-size: 1.8rem;
+    padding: 0.7rem 0;
+  }
+
+  &__data {
+    padding: 2rem;
+
+    &-item {
+      font-size: 1.6rem;
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+    &-list {
+      // padding-left: 1.5rem;
+      li {
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  &__remove-btn {
+    display: block;
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.7rem 0;
+    border: none;
+    background-color: rgb(180, 180, 253);
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+}

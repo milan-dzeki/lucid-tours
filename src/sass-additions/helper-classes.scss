@@ -1,0 +1,66 @@
+// DISPLAYING ITEMS ACCORDING TO THEIR NUMBER
+.container-col-1 {
+  justify-content: center;
+
+  & > * {
+    @media (min-width: 800px) {
+      flex: 0 0 calc(80% - 1rem);
+      margin-right: 1rem;
+    }
+    @media (min-width: 1200px) {
+      flex: 0 0 calc(70% - 1rem);
+    }
+  }
+}
+
+.container-col-2-3 {
+  justify-content: center;
+
+  & > * {
+    @media (min-width: 800px) {
+      flex: 0 0 calc(50% - 1rem);
+      margin-right: 1rem;
+    }
+    @media (min-width: 1200px) {
+      flex: 0 0 calc(50% - 1rem);
+    }
+  }
+}
+
+///////////////////////////////////////
+
+// slider position classes
+.prev-slide {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.current-slide {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.next-slide {
+  transform: translateX(100%);
+  opacity: 0;
+}
+
+////////////////////////////////////
+
+// CSSTransition showModal classes
+.show-enter-active {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.show-enter-done {
+  opacity: 1 !important;
+  transform: translate(-50%, -50%) scale(1) !important;
+}
+.show-exit-active {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}
+.show-exit-done {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.5);
+}

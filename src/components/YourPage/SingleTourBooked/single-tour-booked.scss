@@ -1,0 +1,69 @@
+.single-tour-booked {
+  border: 0.3rem solid rgb(0, 162, 255);
+  border-radius: 0.5rem;
+  position: relative;
+  height: 32rem;
+
+  &__title {
+    display: flex;
+    align-items: center;
+    background-color: rgb(92, 174, 201);
+    color: white;
+    padding: 0.6rem 2rem;
+
+    &-icon {
+      font-size: 2rem;
+      padding-top: 0.4rem;
+      margin-right: 1rem;
+    }
+
+    &-continent {
+      text-transform: uppercase;
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+
+    &-text {
+      font-size: 1.6rem;
+      padding: 1rem;
+
+      span {
+        font-weight: bold;
+        text-transform: capitalize;
+      }
+    }
+
+    &-img {
+      flex: 0 0 40%;
+      background-position: center;
+      block-size: cover;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__delete-btn {
+    display: block;
+    width: 100%;
+    border: none;
+    font-size: 1.8rem;
+    background-color: salmon;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 1rem 0;
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    margin-top: 2rem;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

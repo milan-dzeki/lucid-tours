@@ -1,0 +1,39 @@
+.section-title__require-tour {
+  background-color: rgb(43, 159, 226);
+}
+
+.request-tour {
+  &__content {
+    padding: 2rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.5rem solid rgb(43, 159, 226);
+  }
+
+  &__request {
+    width: 80%;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+
+    &-title {
+      text-transform: capitalize;
+      text-align: center;
+      font-size: 1.7rem;
+      margin-bottom: 2rem;
+      background-color: #eee;
+      padding: 1.5rem 0;
+    }
+  }
+}
+
+.form__request-tour {
+  .form__submit-btn {
+    background-color: black;
+    color: white;
+  }
+}

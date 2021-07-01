@@ -1,0 +1,39 @@
+@import '../../../sass-additions/mixins.scss';
+
+.error-modal {
+  @include modalStyles;
+
+  &__title {
+    background-color: red;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2.3rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+  }
+
+  &__message {
+    font-size: 1.8rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  &__btn {
+    display: block;
+    font-size: 1.7rem;
+    outline: none;
+    border: none;
+    width: 7rem;
+    padding: 1rem 0;
+    margin: 1rem auto;
+    background-color: salmon;
+    color: white;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

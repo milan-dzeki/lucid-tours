@@ -1,0 +1,25 @@
+.form {
+  width: 80%;
+  margin: 0 auto;
+  // padding: 0 2rem;
+
+  &__submit-btn {
+    display: block;
+    width: 20rem;
+    margin: 2rem auto 2rem auto;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:disabled {
+      opacity: 0.3;
+      cursor: not-allowed;
+    }
+  }
+}

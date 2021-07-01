@@ -1,0 +1,140 @@
+.section-title__signup {
+  background-color: rgb(99, 179, 253);
+}
+
+.signup {
+  &__content {
+    padding: 2rem;
+
+    @media (min-width: 850px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+  }
+
+  &__info {
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 3rem;
+    
+    @media (min-width: 850px) {
+      flex: 0 0 calc(55% - 2rem);
+    }
+
+    &-title {
+      text-transform: capitalize;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &-item {
+      margin-bottom: 2rem;
+      padding-bottom: 2rem;
+      border-bottom: 0.3rem solid lightblue;
+
+      &__title {
+        display: flex;
+        align-items: center;
+        color: rgb(0, 132, 194);
+        background-color: rgb(205, 231, 240);
+        border-radius: 0.5rem;
+        padding: 0.5rem 2rem;
+
+        &-text {
+          font-size: 1.7rem;
+        }
+      }
+
+      &__icon {
+        font-size: 2rem;
+        margin-right: 1rem;
+        padding-top: 0.6rem;
+      }
+
+      &__main {
+        display: flex;
+        justify-content: space-between;
+        // align-items: center;
+        padding: 1rem 2rem;
+
+        &-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-right: 2rem;
+        }
+
+        &-text {
+          font-size: 1.5rem;
+          margin-bottom: 1rem;
+        }
+
+        &-img {
+          max-width: 20rem;
+          border-radius: 0.5rem;
+        }
+      }
+
+      &__link {
+        text-align: center;
+        // width: 30rem;
+        // margin: 0 auto;
+        font-size: 1.5rem;
+        padding: 1rem 0;
+        border-radius: 0.5rem;
+        color: rgb(0, 132, 194);
+        background-color: rgb(205, 231, 240);
+
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+
+  &__form {
+    background-color: rgb(243, 243, 243);
+    border: 1px solid #eee;
+    border-radius: 0.5rem;
+    padding: 2rem;
+
+    @media (min-width: 850px) {
+      flex: 0 0 calc(45% - 2rem);
+    }
+
+    &-title {
+      text-transform: capitalize;
+      font-size: 1.8rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    &-check {
+      text-align: center;
+      font-size: 1.6rem;
+      margin-bottom: 1.2rem;
+    }
+
+    &-switch {
+      border: none;
+      border-radius: 0.5rem;
+      outline: none;
+      display: block;
+      width: 20rem;
+      margin: 0 auto;
+      padding: 0.6rem 0;
+      background-color: black;
+      color: white;
+      font-size: 1.6rem;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}

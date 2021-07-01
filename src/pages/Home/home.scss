@@ -1,0 +1,299 @@
+@import "../../sass-additions/variables";
+
+//banner
+.banner__home {
+  .banner__content {
+    grid-template-columns: repeat(4, 100vw);
+  }
+  .banner__item--0 {
+    .banner__item-title {
+      top: 8rem;
+
+      &__title {
+        font-size: 6rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 650px) {
+          font-size: 8rem;
+        }
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 650px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .banner__item--1 {
+    .banner__item-title {
+      top: 12rem;
+
+      &__title {
+        font-size: 5rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 650px) {
+          font-size: 7rem;
+        }
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 650px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .banner__item--2 {
+
+    .banner__item-title {
+      top: 4rem;
+
+      @media (min-width: 650px) {
+        top: 12rem;
+      }
+
+      &__title {
+        font-size: 5rem;
+        color: white;
+        margin-bottom: 1.5rem;
+
+        @media (min-width: 850px) {
+          font-size: 7rem;
+        }
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+
+        @media (min-width: 850px) {
+          font-size: 4rem;
+        }
+      }
+    }
+  }
+
+  .banner__item--3 {
+    
+    .banner__item-title {
+      top: 12rem;
+
+      &__title {
+        font-size: 5.5rem;
+        color: white;
+        margin-bottom: 1.5rem;
+      }
+
+      &__text {
+        color: white;
+        font-weight: bold;
+        font-size: 3rem;
+        width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+//SECTIONS
+.home-section {
+  //about
+  &__about {
+    .section-title {
+      background-color: $home-section-blue-1;
+    }
+  }
+
+  //services
+  &__services {
+    .section-title {
+      background-color: rgb(187, 187, 187);
+    }
+
+    .home-section__content {
+      background-image: linear-gradient(rgba(white, 0.8), rgba(white, 0.8)), url("../../images/home/sections/services/services-bcg.jpg");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      @media (min-width: 850px) {
+        padding: 3rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+      }
+    }
+  }
+
+  //tours
+  &__tours {
+    .section-title {
+      background-color: rgb(35, 160, 233);
+    }
+
+    &-link {
+      text-align: center;
+      background-color: rgb(0, 153, 255);
+      color: white;
+      font-size: 1.8rem;
+      font-weight: bold;
+      padding: 1rem 0;
+      width: 20rem;
+      margin: 0 auto;
+      border-radius: 0.5rem;
+      transition: all 0.2s linear;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__request-tour {
+    .section-title {
+      background-color: rgb(5, 156, 167);
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      padding: 0 3rem;
+      margin-bottom: 3rem;
+    }
+
+    &-links {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+    }
+
+    &-link {
+      font-size: 1.8rem;
+      margin: 0 1rem;
+      padding: 1rem 2.5rem;
+      border-radius: 0.5rem;
+      transition: all 0.2s ease-out;
+      color: white;
+      font-weight: bold;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .reqTour {
+      background-color: rgb(8, 155, 160);
+    }
+
+    .signup {
+      background-color: rgb(173, 0, 0);
+    }
+  }
+
+  &__reviews {
+    .section-title {
+      background-color: rgb(168, 130, 238);
+    }
+    background-color: rgb(248, 246, 255);
+
+    &-link {
+      background-color: lightblue;
+      font-size: 1.7rem;
+      padding: 0.7rem 0;
+      width: 18rem;
+      margin: 0 auto;
+      text-align: center;
+      border-radius: 0.5rem;
+      color: white;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  &__sign {
+    .section-title {
+      background-color: rgb(130, 180, 238);
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      padding: 0 3rem;
+      margin-bottom: 2rem;
+    }
+
+    &-list {
+      list-style: disc;
+      font-size: 1.8rem;
+      padding: 0 5rem;
+      margin-bottom: 3rem;
+    }
+
+    &-list-item {
+      a {
+        text-decoration: underline;
+        color: red;
+      }
+    }
+
+    &-link {
+      display: block;
+      font-size: 2rem;
+      background-color: orange;
+      width: 12rem;
+      text-align: center;
+      margin: 0 auto;
+      border-radius: 0.5rem;
+      padding: 0.7rem 0;
+      color: white;
+      text-transform: uppercase;
+      transition: all 0.2s ease-out;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+// home slider
+.slider__home-reviews {
+  .slider__content {
+    height: 50rem;
+  }
+  .slider__button--left {
+    left: -4rem;
+  }
+  .slider__button--right {
+    right: -4rem;
+  }
+  .single-review {
+    position: absolute;
+    top: 0;
+    // left: 0;
+    max-width: 60rem;
+    height: 100%;
+    transition: all 0.2s linear;
+  }
+}

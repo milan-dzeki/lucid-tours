@@ -1,0 +1,95 @@
+.tours-single-tour {
+  display: grid;
+  grid-template-columns: 1fr 22rem;
+  grid-template-rows: auto 1fr auto;
+  border-radius: 0.4rem;
+  overflow: hidden;
+  box-shadow: 0px 2px 10px rgba(black, 0.5);
+  margin: 0 0 1.5rem 1rem;
+
+  &__info {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__title {
+    display: flex;
+    align-items: center;
+    background-color: rgb(0, 153, 255);
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    color: white;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  &__icon {
+    font-size: 2rem;
+    margin-right: 1.5rem;
+    padding-top: 0.4rem;
+  }
+
+  &__state {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__cities {
+    background-color: rgb(189, 238, 255);
+    padding: 1rem 1.5rem;
+    flex: 1;
+
+    &-text {
+      font-size: 1.6rem;
+      margin-bottom: 1rem;
+    }
+
+    &-list {
+      list-style: disc;
+      padding-left: 2rem;
+    }
+
+    &-city {
+      font-size: 1.6rem;
+      text-transform: capitalize;
+    }
+  }
+
+  &__price {
+    font-size: 1.6rem;
+    background-color: rgb(195, 228, 255);
+    padding: 0.7rem 1.5rem;
+  }
+
+  &__duration {
+    font-size: 1.6rem;
+    background-color: rgb(202, 210, 255);
+    padding: 0.7rem 1.5rem;
+  }
+
+  &__img {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  &__link {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    background-color: rgb(76, 178, 238);
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    padding: 1rem 0;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+      letter-spacing: 1.5px;
+      color: lightcyan;
+      opacity: 0.6;
+    }
+  }
+}

@@ -1,0 +1,100 @@
+@import "../../../sass-additions/variables";
+
+.home-single-tour {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto 1rem auto;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__state {
+    display: flex;
+    align-items: center;
+    background-color: rgba(rgb(0, 132, 255), 0.6);
+    color: white;
+    padding: 0.5rem 2rem;
+
+    &-icon {
+      font-size: 3rem;
+      margin-right: 1.5rem;
+      padding-top: 0.5rem;
+    }
+
+    &-text {
+      font-size: 1.8rem;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+
+  &__info {
+
+    &-cities {
+      display: flex;
+      align-items: center;
+      background-color: rgba(rgb(109, 177, 253), 0.6);
+      padding: 1rem 1rem;
+      
+      &__text {
+        font-size: 1.8rem;
+        font-weight: bold;
+        color: white;
+        text-shadow: 1px 1px 3px black;
+        margin-right: 1.5rem;
+      }
+
+      &__items {
+        & > * {
+          font-size: 1.6rem;
+          background-color: white;
+          margin-right: 1rem;
+          padding: 0 0.7rem;
+          border-radius: 3px;
+        }
+      }
+    }
+
+    &-price {
+      background-color: rgba(rgb(109, 135, 253), 0.6);
+      padding: 1rem 1rem;
+      font-size: 1.6rem;
+      color: white;
+      font-weight: bold;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    &-btn {
+      text-align: center;
+      background-color: rgb(30, 156, 240);
+      color: white;
+      font-weight: bold;
+      font-size: 1.7rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.7rem 0;
+      transition: $transitionCommon;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.9;
+      }
+
+      &__text {
+        margin-right: 1rem;
+        transition: $transitionCommon;
+      }
+
+      &:hover &__text {
+        letter-spacing: 3px;
+      }
+
+      &__icon {
+        padding-top: 0.4rem;
+      }
+    }
+  }
+}

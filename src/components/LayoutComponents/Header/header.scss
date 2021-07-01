@@ -1,0 +1,62 @@
+@import "../../../sass-additions/variables";
+@import "../../../sass-additions/animations";
+
+.header {
+  background-color: $header-blue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 2rem;
+  border-bottom: 0.6rem solid black;
+
+  &__icon {
+    font-size: 4rem;
+    color: white;
+    cursor: pointer;
+    transition: $transitionCommon;
+
+    &:hover {
+      color: black;
+    }
+
+    @media (min-width: 500px) {
+      animation: iconZoomIn 0.8s ease-out 1s 1 backwards;
+    }
+  }
+
+  &__title {
+    position: relative;
+
+    &-link {
+      font-size: 3rem;
+      font-family: 'Indie Flower', cursive;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: white;
+      text-shadow: 1px 2px 3px black;
+      position: relative;
+      z-index: 2;
+      transition: $transitionCommon;
+
+      @media (min-width: 500px) {
+        animation: headerLinkMoveRight 1s ease-out 1;
+      }
+    }
+
+    &-bcg {
+      position: absolute;
+      top: -1rem;
+      left: 10%;
+      background-color: rgb(20, 65, 116);
+      height: 7rem;
+      width: 10rem;
+      clip-path: polygon(30% 0, 48% 84%, 61% 0, 100% 0, 46% 95%, 46% 96%, 2% 35%);
+      transition: $transitionCommon;
+
+      @media (min-width: 500px) {
+        animation: headerLogoAppear 0.8s ease-out 1s 1 backwards;
+      }
+    }
+  }
+}
+

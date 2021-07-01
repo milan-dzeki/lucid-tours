@@ -1,0 +1,146 @@
+@import "../../sass-additions/mixins";
+@import "../../sass-additions/variables";
+
+.banner {
+  height: 40rem;
+  overflow: hidden;
+  position: relative;
+
+  @media (min-width: 650px) {
+    height: 45rem;
+  }
+  @media (min-width: 850px) {
+    height: 50rem;
+  }
+
+  &__content {
+    height: 100%;
+    display: grid;
+  }
+
+  &__item {
+    height: 100%;
+    width: 100vw;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+
+    &-content {
+      height: 100%;
+      position: relative;
+    }
+
+    &-title {
+      position: absolute;
+      text-align: center;
+      width: 100%;
+
+      &__title {
+        text-transform: uppercase;
+        font-weight: bold;
+        text-shadow: 2px 2px 6px black;
+      }
+
+      &__text {
+        text-shadow: 2px 2px 4px black;
+      }
+    }
+
+    &-link {
+      position: absolute;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: white;
+      padding: 0.7rem 2.5rem;
+      border-radius: 10rem;
+      box-shadow: 1px 2px 5px black;
+      transition: $transitionCommon;
+
+      @media (min-width: 850px) {
+        padding: 0.7rem 4rem;
+      }
+
+      &__content {
+        display: flex;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: white;
+          border-radius: 10rem;
+          z-index: -1;
+          transition: $transitionCommon;
+        }
+
+        &:hover::after {
+          transform: scale(3);
+          opacity: 0;
+        }
+      }
+
+      &__link {
+        font-size: 2rem;
+        margin-right: 1rem;
+        color: black;
+      }
+
+      &:hover &__link {
+        color: red;
+      }
+
+      &__icon {
+        font-size: 2rem;
+      }
+
+      &:hover &__icon {
+        color: red;
+      }
+    }
+  }
+
+  &__buttons {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  &__btn {
+    border-radius: 50%;
+    cursor: pointer;
+    height: 1.5rem;
+    width: 1.5rem;
+    border: none;
+    outline: none;
+    transition: $transitionCommon;
+
+    &:hover {
+      background-color: rgb(109, 212, 247);
+    }
+
+    &:not(:last-child) {
+      margin-right: 1rem;
+    }
+  }
+}
+
+//btn active class
+.btn-active {
+  background-color: rgb(128, 167, 240);
+}
+.slide-active {
+  opacity: 1;
+}

@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+
+  @media (max-width: 500px) {
+    font-size: 50%;
+  }
+  @media (max-width: 350px) {
+    font-size: 40%;
+  }
+}
+body {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  display: block;
+  text-decoration: none;
+}
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
